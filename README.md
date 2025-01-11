@@ -107,9 +107,4 @@ The study emphasizes the importance of computational techniques in enabling auto
 
 Future work will aim to develop a more generalized and sophisticated hardware model capable of handling diverse terrains while dynamically adjusting vehicle maneuverability. The trained model can also be extended to incorporate additional functionalities like path planning, object detection, and GPS integration, moving closer to the realization of fully autonomous vehicles. This research motivates ongoing advancements in autonomous navigation systems, contributing to the broader adoption of Industry 4.0 technologies and improving the reliability and safety of self-driving vehicles across various environments.
 
-
-
-
-
-
-
+seg.ipynb  
