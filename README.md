@@ -106,5 +106,11 @@ The study emphasizes the importance of computational techniques in enabling auto
 
 Future work will aim to develop a more generalized and sophisticated hardware model capable of handling diverse terrains while dynamically adjusting vehicle maneuverability. The trained model can also be extended to incorporate additional functionalities like path planning, object detection, and GPS integration, moving closer to the realization of fully autonomous vehicles. This research motivates ongoing advancements in autonomous navigation systems, contributing to the broader adoption of Industry 4.0 technologies and improving the reliability and safety of self-driving vehicles across various environments.
 
-S. Wang, “Road Terrain Classification Technology for Autonomous Vehicle.” [Online]. Available: 
-http://www.springer.com/series/15608
+
+## Project Notebook
+
+The notebook seg.ipynb contains all the detailed steps for this project.
+
+You can view or download the notebook directly from this repository:
+ - 📒 [Awesome README](https://github.com/mani9kanta3/Terrain_Segmentation/blob/main/seg.ipynb)
+
