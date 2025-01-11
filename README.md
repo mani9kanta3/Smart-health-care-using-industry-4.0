@@ -6,6 +6,15 @@ The model was trained using the CAT-CaVS Traversability Dataset, which includes 
 
 This research lays the groundwork for integrating terrain analysis with practical hardware implementations, paving the way for further advancements in autonomous vehicle technologies.
 
+## Overview
+Off-road terrain plays a critical role in determining the performance and safety of autonomous vehicles. This project uses YOLOv8, a state-of-the-art CNN architecture, for instance segmentation to classify drivable and non-drivable regions in complex terrains. The model is trained on annotated off-road images and demonstrates high accuracy in detecting drivable regions.
+
+## Features
+- **Instance Segmentation:** Differentiates drivable regions from obstacles such as rocks, trees, and rough terrain.
+- **Real-Time Analysis:** Processes images to identify paths in off-road scenarios with high precision.
+- **Preprocessing Pipeline:** Includes resizing, augmentation, and annotation refinement for robust model training.
+- **Scalable Framework:** Can be extended to include path planning and obstacle avoidance.
+
 ## Data Collecting and Cleaning
 
 **Dataset:**
