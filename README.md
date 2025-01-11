@@ -1,4 +1,4 @@
-# 🏔️Terrain Classification and Identification for Autonomous Vehicles
+# 🏔️ Terrain Classification and Identification for Autonomous Vehicles 🏔️
 
 This project focuses on enhancing the safety and adaptability of autonomous vehicles by enabling reliable identification and classification of off-road terrains. By leveraging the YOLOv8 instance segmentation model, the project achieves accurate terrain detection, supporting autonomous vehicles in making informed navigation decisions.
 
