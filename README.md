@@ -32,8 +32,9 @@ source: https://www.cavs.msstate.edu/resources/autonomous_dataset.php#:~:text=Ca
 This process ensured a clean and concise dataset focused solely on features relevant to the research.
 
 
-## Screenshots
+## Confusion Matrix
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![confusion_matrix_normalized](https://github.com/user-attachments/assets/ea2978b8-f20c-4e1b-96f6-fae568f9685c)
+
 
 
