@@ -98,6 +98,11 @@ This process ensured a clean and concise dataset focused solely on features rele
 
 ![results](https://github.com/user-attachments/assets/10d85de8-efe1-4226-95be-79f24aa89bb9)
 
+![image](https://github.com/user-attachments/assets/a57ddfbb-ba42-4261-b252-a5b150c3af16)
+
+
+
+
 ## Conclusion
 
 This project presents a comprehensive approach to off-road terrain identification and analysis, utilizing the YOLOv8 instance segmentation architecture. By training the model on the CAT-CaVS Traversability Dataset, which includes diverse off-road terrain images, the system achieves high accuracy in detecting drivable regions and differentiating them from obstacles such as trees, rocks, and other environmental features. The YOLOv8 model's advanced capabilities in instance segmentation allow it to deliver refined and precise results, making it well-suited for real-world applications in autonomous vehicles.
