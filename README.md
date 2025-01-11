@@ -140,3 +140,18 @@ The notebook seg.ipynb contains all the detailed steps for this project.
 You can view or download the notebook directly from this repository:
  - 📒 [Jupyter Notebook](https://github.com/mani9kanta3/Terrain_Segmentation/blob/main/seg.ipynb)
 
+
+## References
+
+1. Dataset Utilized: S. Sharma et al., "CaT: CAVS Traversability Dataset for Off-Road Autonomous Driving," IEEE Access, vol. 10, pp. 24759–24768, 2022, doi: 10.1109/ACCESS.2022.3154419.
+
+2. Model Architecture: J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, "You Only Look Once: Unified, Real-Time Object Detection." Available online: http://pjreddie.com/yolo/.
+
+3. Radar Imaging: S. Royo and M. Ballesta-Garcia, "An overview of lidar imaging systems for autonomous vehicles," Applied Sciences (Switzerland), vol. 9, no. 19, Oct. 2019, doi: 10.3390/app9194093.
+
+4. Semantic Segmentation Techniques: D. Jiang et al., "Semantic segmentation for multiscale target based on object recognition using the improved Faster-RCNN model," Future Generation Computer Systems, vol. 123, pp. 94–104, Oct. 2021, doi: 10.1016/j.future.2021.04.019.
+
+5. NuScenes Dataset: H. Caesar et al., "nuScenes: A multimodal dataset for autonomous driving," Mar. 2019. Available online: http://arxiv.org/abs/1903.11027.
+
+
+
