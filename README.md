@@ -40,10 +40,67 @@ source: https://www.cavs.msstate.edu/resources/autonomous_dataset.php#:~:text=Ca
       -  Applied color adjustments such as brightness, contrast, and saturation changes, along with geometric transformations like rotation and flipping, to enhance dataset diversity and improve model generalization.
 This process ensured a clean and concise dataset focused solely on features relevant to the research.
 
+## Annotation Refinement:
 
-## Confusion Matrix
+- **Platform:** Used Roboflow for efficient and user-friendly manual labeling.
+- **Focus:** Labeled drivable regions in images, distinguishing them from obstacles and non-drivable terrain.
+- **Workflow:**
+  - Uploaded raw images to Roboflow.
+  - Outlined drivable regions and assigned specific color-coded masks.
+  - Performed quality checks to ensure accuracy and consistency.
+- **Refinement:** Iterative corrections were made to improve annotation precision.
+- **Dataset:** Selected 1.24k high-quality annotated images from the 3.45k dataset for training.
+- **Outcome:** Enhanced data quality improved the YOLOv8 model's ability to accurately detect drivable regions.
+- **Advantages:**
+  - Ensured precise and clean data for training.
+  - Improved segmentation accuracy and model performance.
 
-![confusion_matrix_normalized](https://github.com/user-attachments/assets/ea2978b8-f20c-4e1b-96f6-fae568f9685c)
+## Model Development
+
+**Training Parameters**
+
+- **Model Architecture:** YOLOv8 instance segmentation model, a state-of-the-art Convolutional Neural Network (CNN) for object detection and segmentation.
+- **Training Configuration:**
+  - Epochs: 100
+  - Image Size: 640 pixels
+  - Batch Size: 16
+  - Loss Functions: Box loss, segmentation loss, and class loss were monitored during training for both training and validation data.
+  - Feature extraction across 21 stages for refined segmentation performance.
+
+**Validation Parameters**
+
+- Validation data constituted 8% of the total dataset to evaluate model generalization.
+- Performance metrics such as precision, recall, and F1-score were monitored to measure the effectiveness of the trained model.
+- The confusion matrix was analyzed to identify misclassifications and refine training where necessary.
+
+**Testing Parameters**
+
+- Testing data formed 4% of the dataset and was used to validate the model’s real-world applicability.
+- Predicted outputs were visually compared with ground truth annotations, showcasing the model's ability to segment drivable regions and differentiate obstacles.
+
+
+## Result
+
+**Performance Metrics:**
+
+- **Precision:** It measures the proportion of true positive predictions out of all positive predictions, indicating the accuracy of the model's positive classifications.
+- **Recall:** It measures the proportion of true positive predictions out of all actual positive cases, indicating the model's ability to identify all relevant instances.
+- **F1-Score:** Harmonic mean of precision and recall, providing a balanced measure of a model's accuracy that considers both false positives and false negatives.
+- **mAP@50 (Mean Average Precision at IoU 0.50):** This metric evaluates the detection model's performance by calculating the average precision (AP) for all classes at a single Intersection over Union (IoU) threshold of 0.50, which is considered a lenient criterion for overlap between predicted and ground truth bounding boxes.
+- **mAP@50-95 (Mean Average Precision at IoU 0.50 to 0.95):** This metric provides a more comprehensive evaluation by averaging AP over multiple IoU thresholds ranging from 0.50 to 0.95 (in steps of 0.05), offering a stricter and more detailed measure of the model's detection accuracy across varying overlap levels.
+
+**Loss Function:**
+
+- **Box loss (box_loss):** It measures the discrepancy between the predicted bounding boxes and the ground truth bounding boxes, typically using metrics like Smooth L1 loss or IoU-based loss to optimize the model's localization accuracy.
+- **Segmentation Loss (seg_loss):** It quantifies the difference between the predicted and ground truth segmentation masks, commonly using metrics like Cross-Entropy Loss or Dice Loss, to optimize pixel-wise classification accuracy.
+- **Classification Loss (cls_loss):** It measures the error in predicting class labels for objects, typically using Cross-Entropy Loss, Focal Loss, or other variations to enhance the model's accuracy in distinguishing between categories.
+- **Distribution Focal Loss (dfl_loss):** It is used in object detection to refine bounding box regression by learning the distribution of precise locations, improving the accuracy of boundary predictions for objects.
+
+![results](https://github.com/user-attachments/assets/10d85de8-efe1-4226-95be-79f24aa89bb9)
+
+
+
+
 
 
 
