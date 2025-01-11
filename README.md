@@ -112,5 +112,5 @@ Future work will aim to develop a more generalized and sophisticated hardware mo
 The notebook seg.ipynb contains all the detailed steps for this project.
 
 You can view or download the notebook directly from this repository:
- - 📒 [Awesome README](https://github.com/mani9kanta3/Terrain_Segmentation/blob/main/seg.ipynb)
+ - 📒 [Jupyter Notebook](https://github.com/mani9kanta3/Terrain_Segmentation/blob/main/seg.ipynb)
 
